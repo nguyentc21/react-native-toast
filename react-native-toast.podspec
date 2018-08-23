@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'react-native-toast/Classes/**/*'
+  s.source_files = 'ios/RCTToast/*.{m,h}'
   
   # s.resource_bundles = {
   #   'react-native-toast' => ['react-native-toast/Assets/*.png']
