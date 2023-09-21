@@ -1,4 +1,4 @@
-# react-native-toast
+# @nguyentc21/react-native-toast
 
 Simple Toast for React native app
 

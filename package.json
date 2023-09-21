@@ -1,6 +1,6 @@
 {
   "name": "@nguyentc21/react-native-toast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Toast for React native app",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
