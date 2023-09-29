@@ -1,6 +1,6 @@
 {
   "name": "@nguyentc21/react-native-toast",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple Toast for React native app",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -85,7 +85,7 @@
     "react-native": "*"
   },
   "engines": {
-    "node": ">= 18.0.0"
+    "node": ">= 16.0.0"
   },
   "packageManager": "^yarn@1.22.15",
   "jest": {
