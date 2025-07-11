@@ -176,7 +176,7 @@ const ToastSection = forwardRef<ToastRefType, ToastProps>(
         visible: false,
         content: !content ? '' : content,
         type: !!_type ? _type : type,
-        duration: !!_duration ? _duration : duration,
+        duration: _duration != undefined ? _duration : duration,
         backgroundColor,
         textColor,
         textStyle,
