@@ -1751,10 +1751,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@nguyentc21/event-listener@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@nguyentc21/event-listener/-/event-listener-1.0.0.tgz#97a73abe0abc9470d11a8055a0ac1c6bd337ecf1"
-  integrity sha512-jzaz1ujwPmf0pOCmFHYFxNFAFrBFxi32+vr0NS2xobGgMJFoDES1pvLA3y4J29YnrAM6twfncY+5PJD5kKyzQg==
+"@nguyentc21/event-listener@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@nguyentc21/event-listener/-/event-listener-1.0.3.tgz#49937fe07d120792bcf75f637a9b21b6a7469277"
+  integrity sha512-o6155uRsaygmjSKEok3IVc0RopOlrK/yY2ZVjgG8alhR89WQRORAKHMCrdzXWZz2oBuL62EPpYHcRB+k6b3VxA==
 
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
   version "5.1.1-v1"

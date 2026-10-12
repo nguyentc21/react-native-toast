@@ -1,10 +1,12 @@
+import { EVENT_NAME } from './constants';
 import EventRegister from './EvenRegister';
 
-import type { ToastItemOptions } from './ToastSection/types';
+import type { ToastItemOptions } from './types';
 
 type ToastItemOptionArgs = [
   ToastItemOptions['content'],
   ToastItemOptions['type']?,
+  ToastItemOptions['position']?,
   ToastItemOptions['duration']?
 ];
 type Options = ToastItemOptionArgs | ToastItemOptions;
@@ -14,10 +16,12 @@ const argsOptionToOptions = (
 ): ToastItemOptions => ({
   content: args[0],
   type: args[1],
-  duration: args[2],
+  position: args[2],
+  duration: args[3],
 });
-class Toast {
-  static show(...args: ToastItemOptionArgs | Options[]) {
+
+const Toast = {
+  show(...args: ToastItemOptionArgs | Options[]) {
     try {
       let data: ToastItemOptions | ToastItemOptions[] | undefined;
       if (typeof args[0] !== 'object') {
@@ -28,9 +32,11 @@ class Toast {
           return el;
         });
       }
-      EventRegister.emit('show-toast', data);
-    } catch (error) {}
-  }
-}
+      EventRegister.emit(EVENT_NAME, data);
+    } catch (error: any) {
+      if (__DEV__) console.warn('[Toast.show] failed:', error?.message);
+    }
+  },
+};
 
 export default Toast;
