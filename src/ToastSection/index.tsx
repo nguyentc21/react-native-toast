@@ -99,6 +99,7 @@ const lStyles = StyleSheet.create({
     backgroundColor: 'transparent',
     position: 'absolute',
     alignSelf: 'center',
+    alignItems: 'center',
     maxWidth: '90%',
   },
   topContainer: {
